@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>ScavengerHunt</title>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+		<script type="text/javascript" src="Source1/squel.min.js"></script>
+		<script type="text/javascript" src="Source1/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="Source1/scavengerHunt.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "Source1/style1.css">	
+	</head>
+	<body>
+	<div id="map-canvas"></div>
+	<div id="panel">
+		<p align="center"><font face="verdana" size ="5" color="#003399">ScavengerHunt</font><br><font face="verdana" size="4" color="#ffffff">Hunt in the Heights</font></p>
+		<hr><font face="verdana" size ="3" color="#ffffff">Report.</font><br>
+		<font face="verdana" size ="2" color="#003399"><u>SMS Based tools</u></font><font face="verdana" size ="1" color="#ffffff"> (More to Come soon!)</font><br>
+		<font face="verdana" size ="1" color="#003399">Text Code to 877-877</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face ="verdana" size ="1" color ="#003399">Text to 716-342-0400</font><br>
+		<font face="verdana" size ="2" color="#ffffff">UHTL</font>&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana" size="2" color="#ffffff">WAIVER</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana" size ="2" color="#ffffff">GRAFFITI</font><br>
+		<font face="verdana" size ="2" color="#ffffff">GRAFFITI</font>&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana" size ="2" color="#ffffff">AID</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana" size ="2" color="#ffffff">WAIVER</font><br>
+		<font face="verdana" size ="2" color="#ffffff">RETREE</font><br>
+		<font face="verdana" size ="2" color="#ffffff">FEEDBACK</font><br>
+		<font face="verdana" size ="1" color=" #003399"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face ="verdana" size ="1" color ="#003399"></font><br>
+		<font face="verdana" size ="2" color="#003399"><u>Web-Based tools</u></font><br>
+		<font face="verdana" size ="2" color="#ffffff">Report Graffiti to Map</font>&nbsp;&nbsp;&nbsp;&nbsp;<input id="webRepGraf" type="button" class="button2" value="Report" onclick="window.open('https://docs.google.com/forms/d/1liQEsh60h3Iop1P5oLzUc7nG7RNgZfQZDS_xR0Bl1HQ/viewform')"/>
+		<hr><font face="verdana" size ="3" color="#ffffff">Respond.</font><br>
+		<input id ="action" type="button" class="button1" value="Take Action" onclick="window.open('https://docs.google.com/a/oneprofit.org/forms/d/1XEkaZdCkb1EbPMu-JhDDPXDZBv8EtsZtJcHbkOD4eFM/viewform')"/>
+		<hr><font face="verdana" size ="3" color="#ffffff">Feedback.</font><br>
+		<input id ="action" type="button" class="button1" value="Discuss" onclick="window.open('https://groups.google.com/forum/#!forum/graffiti-feedback')"</>
+		<input id ="action" type="button" class="button1" value="Sign Up" onclick="window.open('https://docs.google.com/a/oneprofit.org/forms/d/1wXkvQ3B-UyrGbjUAIC_Xy-zLw7Yboye4KgUUdFAl7v0/viewform')"</>
+		<input id ="action" type="button" class="button1" value="Feedback" onclick="window.open('https://docs.google.com/a/oneprofit.org/forms/d/1AJ3hc0a2-p-vSdV_fblAUfdDVZB-u9lXOJ9HhkLPr28/viewform')"</><br>
+		<hr><font face="verdana" size ="3" color="#ffffff">Monitor.</font><br>
+		<select id="demmap" class = "Select" onchange = "getIdentity();updateMap();">
+			<option value="0">Select one...</option>
+			<option value ="1">Blight (Open Data Kit)</option>
+			<option value ="2">Graffiti (Open Data Kit)</option>
+			<option value ="3">Urban Tree Cover (Open Data Kit)</option>
+			<option value ="4">GRAFFITI (SMS-Based)</option>
+			<option value ="5">Graffiti (Web-Based)</option>
+		</select><br>
+		<font face="verdana" size="3">Near You </font><input type="text" class="text_input" id="address" value="Enter Address or Zip"/>
+		<input id="submit" type="button" class="button2" value="Go" onclick="codeAddress('<%resultset.getString(3)%>');updateMap();"/><br>
+		<hr>
+		<font face="verdana" size ="3" color="#003399">Get in Touch to Get Involved</font><br>
+		<a href="https://www.givegab.com/nonprofits/university-heights-tool-library"><font face="verdana" size="2" color="ffffff">University Heights Tool Library</font><br>
+		<a href="https://docs.google.com/forms/d/1_-RRLfvITzfTZzejnc6uPgVhttMSDQQFvU9RmPnv5TQ/viewform"><font face="verdana" size ="2" color="#ffffff">Retree Volunteer</font><br></a>
+		<a href="https://docs.google.com/forms/d/1hW1xk5O50bXlPYEqCz5JBjCL7OIYO5UuOW_FrjW_H1o/viewform"><font face="verdana" size ="2" color="#ffffff">Tree Request</font><br></a>
+	</div>
+	</body>
+</html>
+		
