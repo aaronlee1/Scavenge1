@@ -6,6 +6,9 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+#main-content {
+	display
+}
 #map-canvas {
     height: 100%;
     width: 100%;
@@ -94,7 +97,6 @@ body {
 	padding: 3px;
 	background-color: #003399;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-family: verdana;
 }
 .button1{
