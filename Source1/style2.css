@@ -95,6 +95,7 @@ body {
 	background-color: #003399;
 	text-transform: uppercase;
 	font-family: verdana;
+	font-size: 12px;
 }
 .button1{
 	margin-left: 0px;
@@ -106,6 +107,7 @@ body {
 	background-color: #003399;
 	text-transform: lowercase;
 	font-family: verdana;
+	font-size: 12px;
 }
 .button2{
 	margin-left: 0px;
@@ -117,6 +119,7 @@ body {
 	background-color: #003399;
 	text-transform: lowercase;
 	font-family: verdana;
+	font-size: 12px;
 }
 #legend{
 	background: #3399FF;
