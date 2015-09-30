@@ -32,23 +32,7 @@ body {
 	width: 280px;
 	color: white;
 }
-#panel-2 {
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	margin-left: 0px;
-	z-index: 1;
-	background: #3399FF;
-	opacity: 0.9;
-	font-size:16px;
-	font-weight: bold;
-	padding: 10px;
-	border: 1px solid #999;
-	margin: 10px;
-	border-radius: 6px;
-	width: 280px;
-	color: white;
-}
+
 .Select {
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -108,7 +92,6 @@ body {
 	padding: 3px;
 	background-color: #003399;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-family: verdana;
 }
 .button2{
@@ -120,7 +103,6 @@ body {
 	padding: 3px;
 	background-color: #003399;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-family: verdana;
 }
 #legend{
